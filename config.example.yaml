@@ -1,0 +1,208 @@
+name: kami
+
+site:
+  theme_color:
+    light: '#39c5bb'
+    dark: '#1f8f93'
+    light_hover: '#39c5bb80'
+    dark_hover: '#1f8f9380'
+  secondary_color:
+    light: '#F48FB1'
+    dark: '#E91E63'
+  favicon: https://innei.ren/favicon.svg
+
+  # 随机图片
+  figure:
+    - https://cdn.jsdelivr.net/gh/Innei/fancy@master/2021/qsNmnC2zHB5FW41.jpg
+    - https://cdn.jsdelivr.net/gh/Innei/fancy@master/2021/GwJzq4SYtClRcZh.jpg
+    - https://cdn.jsdelivr.net/gh/Innei/fancy@master/2021/6nOYcygRGXvpsFd.jpg
+    - https://cdn.jsdelivr.net/gh/Innei/fancy@master/2021/Qr2ykmsEFpJn4BC.jpg
+    - https://cdn.jsdelivr.net/gh/Innei/fancy@master/2021/KiOuTlCzge7JHh3.jpg
+    - https://cdn.jsdelivr.net/gh/Innei/fancy@master/2021/sM2XCJTW8BdUe5i.jpg
+    - https://cdn.jsdelivr.net/gh/Innei/fancy@master/2021/18KQYP9fNGbrzJu.jpg
+    - https://cdn.jsdelivr.net/gh/Innei/fancy@master/2021/rdjZo6Sg2JReyiA.jpg
+    - https://cdn.jsdelivr.net/gh/Innei/fancy@master/2021/X2MVRDe1tyJil3O.jpg
+    - https://cdn.jsdelivr.net/gh/Innei/fancy@master/2021/EDoKvz5p7BXZ46U.jpg
+    - https://cdn.jsdelivr.net/gh/Innei/fancy@master/2021/EGk4qUvcXDygV2z.jpg
+    - https://cdn.jsdelivr.net/gh/Innei/fancy@master/2021/5QdwFC82gT3XPSZ.jpg
+    - https://cdn.jsdelivr.net/gh/Innei/fancy@master/2021/KPyTCARHBzpxJ46.jpg
+    - https://cdn.jsdelivr.net/gh/Innei/fancy@master/2021/7TOEIPwGrZB1qFb.jpg
+    - https://cdn.jsdelivr.net/gh/Innei/fancy@master/2021/Ihj5QAZgVMqr9fJ.jpg
+    - https://cdn.jsdelivr.net/gh/Innei/fancy@master/2021/KZ6jv8C92Vpwcih.jpg
+
+  background:
+    src:
+      light: https://gitee.com/xun7788/my-imagination/raw/master/cdn/background.png
+      dark: https://gitee.com/xun7788/my-imagination/raw/master/cdn/background-night.png
+    position: top center fixed
+
+  header:
+    menu:
+      - title: 源
+        path: /
+        type: Home
+        icon: faDotCircle
+        subMenu: []
+      - title: 文
+        path: /posts
+        type: Post
+        subMenu: []
+        icon: faGlasses
+      - title: 记
+        type: Note
+        path: /notes
+        icon: faFeatherAlt
+      - title: 言
+        path: /says
+        icon: faComments
+      - title: 览
+        icon: faHistory
+        path: /timeline
+        subMenu:
+          - title: 生活
+            icon: faFeatherAlt
+            path: /timeline?type=note
+          - title: 博文
+            icon: faBookOpen
+            path: /timeline?type=post
+          - title: 回忆
+            icon: faCircle
+            path: /timeline?memory=1
+      - title: 友
+        icon: faUserFriends
+        path: /friends
+      - title: 诉
+        icon: faComment
+        path: /recently
+      - title: 余
+        icon: faCircleNotch
+        path: /favorite/music
+        subMenu:
+          - title: 听歌
+            icon: faMusic
+            type: Music
+            path: /favorite/music
+      - title: ''
+        icon: faSubway
+        path: 'https://travellings.link'
+  social:
+    - url: 'https://github.com/Innei'
+      title: GitHub
+      icon: faGithub
+      color: var(--black)
+    - url: 'https://jq.qq.com/?_wv=1027&k=5t9N0mw'
+      title: QQ
+      icon: faQq
+      color: '#12b7f5'
+    - url: 'https://twitter.com/__oQuery'
+      title: twitter
+      icon: faTwitter
+      color: '#02A4ED'
+
+  footer:
+    background:
+      src:
+        dark: |-
+        light: https://gitee.com/xun7788/my-imagination/raw/master/cdn/footer.png
+      position: top/cover
+    home_page: https://innei.ren
+    motto:
+      content: Stay hungry. Stay foolish.
+      author: Steve Jobs
+    icp:
+      enable: true
+      label: '浙 ICP 备 20028356 号'
+      link: http://beian.miit.gov.cn/
+
+    navigation:
+      - name: 关于
+        path: '/about'
+      - name: 留言
+        path: '/message'
+      - name: 友链
+        path: '/friends'
+      - name: RSS 订阅
+        path: '/feed'
+        newtab: true
+      - name: 站点地图
+        path: '/sitemap'
+        newtab: true
+      - name: 开往
+        path: https://travellings.link/
+        newtab: true
+
+  custom:
+    script: |-
+      console.log('Hello')
+    style: |-
+      .foo {
+        color: red
+      }
+    js:
+      - https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js
+    css:
+      - https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css
+
+function:
+  player:
+    # 默认播放列表
+    # 只支持网易云
+    id:
+      - 563534789
+      - 1447327083
+      - 1450252250
+  analyze:
+    enable: true
+    ga: ''
+    baidu: ''
+    umami:
+      id: ''
+      url: ''
+  netease:
+    username: example
+    # password 敏感字段不应该暴露，后续看看怎么操作
+    password:
+  donate:
+    enable: true
+    link: https://afdian.net/@Innei
+    qrcode:
+      - https://cdn.jsdelivr.net/gh/Innei/img-bed@master/20191211132347.png
+
+  ban_devtool:
+    enable: false
+
+  notification:
+    welcome:
+      title: 润润团！小润书
+      message: 听我说，一起润
+      icon: https://xiaorunshu.com/android-chrome-192x192.png
+      to-link: //xiaorunshu.com
+
+page:
+  home:
+    sections:
+      - post
+      - note
+      - friend
+      - more
+    title_mapping:
+      post: '最近的技术输出'
+      note: '用文字记录生活'
+      friend: '朋友们'
+      more: '了解更多'
+
+    more:
+      - name: 留言
+        desc: 你的话对我很重要
+        path: '/message'
+        cover:
+      - name: 关于
+        desc: 这里有我的小秘密
+        path: '/about'
+        cover:
+      - name: 点赞
+        type: 'like'
+        cover:
+      - name: 订阅
+        type: 'subscribe'
+        cover:

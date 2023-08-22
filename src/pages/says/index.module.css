@@ -1,0 +1,27 @@
+.author {
+  @apply relative flex flex-wrap justify-between;
+}
+
+.kami-say {
+  @apply flex w-auto w-full;
+
+  > div {
+    @apply ml-4;
+  }
+}
+
+.kami-say blockquote {
+  -webkit-column-break-inside: avoid;
+  break-inside: avoid;
+  background: rgb(52 152 219 / 5%);
+  outline: none !important;
+  border-left-width: 3px;
+  border-style: solid;
+}
+
+.kami-say .author {
+  opacity: 0.6;
+  font-size: 0.85em;
+  text-align: right;
+  font-style: italic;
+}
